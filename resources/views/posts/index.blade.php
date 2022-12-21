@@ -3,5 +3,6 @@
 @foreach($posts as $post)
     <div>{{ $post->title }}</div>
     <div>{{ $post->created_at }}</div>
+    <a href="/posts/{{$post->id}}">More...</a>
     <hr>
 @endforeach
